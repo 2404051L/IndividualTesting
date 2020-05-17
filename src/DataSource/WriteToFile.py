@@ -1,7 +1,7 @@
 class WriteToFile:
     # Here will be the instance stored.
     file = ""
-    filePath = "resource/"
+    filePath = "../resource/"
     directory = ""
     fileName = ""
 

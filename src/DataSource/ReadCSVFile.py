@@ -4,7 +4,7 @@ import os
 
 class ReadCSVFile :
 
-    filePathPrefix = "resource/"
+    filePathPrefix = "../resource/"
 
     def getFileData(self, directory,  fileName):
         fileData = []
@@ -15,4 +15,7 @@ class ReadCSVFile :
         return fileData
 
     def getLastLines(self,directory, fileName, numerOfLines):
-        return self.getFileData(directory, fileName)[-1*numerOfLines]
+        try:
+            return self.getFileData(directory, fileName)[-1*numerOfLines]
+        except IndexError:
+            return 'File is empty'

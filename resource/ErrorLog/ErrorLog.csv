@@ -10,3 +10,6 @@ DBExecuteSQL.executeSqlSelect,An error occurred:no such table: customer
 DBExecuteSQL.executeSqlSelect,With command:Select * from customer
 DBExecuteSQL.executeSqlSelect,An error occurred:no such table: customer
 DBExecuteSQL.executeSqlSelect,With command:Select * from customer
+DBConnection.createConnection,An error occurred:unable to open database file
+DBConnection.createConnection,An error occurred:unable to open database file
+DBConnection.createConnection,An error occurred:unable to open database file

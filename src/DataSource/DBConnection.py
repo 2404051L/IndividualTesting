@@ -2,7 +2,7 @@ import sqlite3
 from src.Utilities.ErrorLogging import ErrorLogging
 class DBConnection:
 
-    dbFileName = "resource/Database/applicationDB.db";
+    dbFileName = "../resource/Database/applicationDB.db";
     inMemoryDatabase = ":memory:";
     sqlLiteUrl = dbFileName;
     errorLogging = ErrorLogging()

@@ -3,16 +3,16 @@ from src.DataSource.DBConnection import DBConnection
 from src.DataSource.DBExecuteSQL import DBExecuteSQL
 import sqlite3
 
-class DatabaseGetData(DataSourceInterface):
 
+class DatabaseGetData(DataSourceInterface):
     dbExecuteSQL = DBExecuteSQL()
 
-    def generateSelectStatement(self,tableName,fieldNames):
+    def generateSelectStatement(self, tableName, fieldNames):
         return "Select * from " + tableName
 
-    def getData(self,tableName,fieldNames):
+    def getData(self, tableName, fieldNames):
         sqlData = []
-        selectStatement = self.generateSelectStatement(tableName,fieldNames)
+        selectStatement = self.generateSelectStatement(tableName, fieldNames)
         try:
             sqlData = self.dbExecuteSQL.executeSqlSelect(selectStatement)
         except sqlite3.Error as sqlExp:
